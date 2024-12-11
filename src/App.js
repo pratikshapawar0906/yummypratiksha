@@ -16,8 +16,7 @@ import Why from './Why-us'
 import Testimonials from './Testimonials';
 import BookATable from './BookATable';
 import Footer from './Footer';
-import Usercustomer from './Usercustomer';
-import Usercontact from './Usercontact';
+
 
 const App = () => {
 
@@ -31,20 +30,15 @@ const App = () => {
     {/* Navbar section  */}
      
          <Router>
-          <div>
-             <Navbar/>
-               <div>
+         
+             <Navbar />
+              
                   <Routes>
                      <Route  >
                          <Route path='/' element={ < Home/>}></Route>
-                          <Route path="/usercontact" element={<Usercontact />} />
-                          <Route path="/usercustomer" element={<Usercustomer />} />
-
                      </Route>
                   </Routes>
-               </div>
-               
-          </div>
+              
          </Router>
 
         {/* About section */}

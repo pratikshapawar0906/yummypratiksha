@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <>
-      <section id="about" className="about section aos-init aos-animated mb-5" data-aos="fade-up" >
+      <section id="about" className="about section aos-init aos-animated mb-5" data-aos="fade-up" style={{margin:'0px 10px 50px ', padding:'60px  20px'}}>
             <div className="col-md-12  text-center aos-init aos-animated" data-aos="fade-up">
                 <h6 className=" font-weight-lighter about-heading" >ABOUT US</h6>
                 <p className="display-4 about-subheading" >
@@ -12,7 +12,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className=" col-md-12 col-6 container-fluid px-4" >
+            <div className=" col-md-12  px-4" style={{padding:'0px 12px'}} >
                 <div className="row align-items-center">
                     {/* left section */}
                     <div className="col-12 col-lg-7 aos-init aos-animated" data-aos="fade-up" data-aos-delay="100">

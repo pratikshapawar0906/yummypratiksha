@@ -116,6 +116,9 @@
   color: #37373F;
   font-weight: light;
 }
+.fs{
+  font-size: 18px;
+}
 .description-title{
   font-family: Arial, Helvetica, sans-serif;
   color:#CE1212;
