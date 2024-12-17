@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light  fw-bold position-fixed sticky-top bg-light shadow-sm w-100">
+      <nav className="navbar navbar-expand-lg navbar-light  fw-bold  sticky-top bg-light shadow-sm ">
          <div className="container-fluid p-3 align-items-center  " >
               <div className="col-md-12 d-flex align-items-center justify-content-between w-100">
 
