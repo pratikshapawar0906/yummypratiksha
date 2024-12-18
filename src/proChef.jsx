@@ -7,7 +7,7 @@ const proChef = (props) => {
             <div className=" card team-member">
                 <div className=" card-header member-img" style={{padding: '0px'}}>
                     <img src={props.img} className="img-fluid rounded"/>
-                    <div className="social rounded"  >
+                    <div className="social "  >
                         <a href=""><i className="bi bi-twitter-x "></i></a>
                         <a href=""><i className="bi bi-facebook "></i></a>
                         <a href=""><i className="bi bi-instagram "></i></a>

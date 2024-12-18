@@ -44,8 +44,8 @@ const Testimonials = () => {
             </div>
             <div className="container aos-animated aos-init" data-aos="fade-up" data-aos-delay="100" style={{margin: '0px 44px', padding: '0px 12px'}}>
                 <div className="carousel slide " data-bs-ride="carousel" data-interval="2000" id="carouseldata">
-                   <div className="col-lg-12 aos-init aos-animated">
-                        <div className="carousel-inner col-lg-8">
+                   <div className="col-md-12 aos-init aos-animated">
+                        <div className="carousel-inner col-md-8">
                             
                              {
 
