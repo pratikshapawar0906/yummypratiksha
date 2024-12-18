@@ -384,6 +384,21 @@ padding: 60px 0px;
   border-radius: 50%;
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  .testimonial-content p {
+    font-size: 12px; /* Reduce font size on smaller screens */
+    padding: 0 10px; /* Adjust padding for smaller containers */
+  }
+
+  .testimonial-content {
+    margin: 0 auto; /* Center the content */
+    text-align: justify; /* Align text properly for readability */
+  }
+
+  .carousel-indicators {
+    top: 20px !important; /* Adjust positioning for indicators */
+  }
+}
 
 .carousel-indicators button {
   height: 10px !important;

@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>   
       <section>
-        <div className="container-fluid py-5" id='home' style={{backgroundColor:'#F2F2F2 ',marginTop:'90px',zIndex: '-1 '}} >
+        <div className="container-fluid py-5" id='home' style={{backgroundColor:'#F2F2F2 ',zIndex: '-1 '}} >
           <div className="col-lg-12 ">
             <div className="row aligns-items-center" >
                 <div className=" col-md-6 text-center text-md-start p-5">

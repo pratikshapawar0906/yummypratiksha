@@ -5,10 +5,10 @@ const Emp = (props) => {
     <>
       <section>
         <div className= {`carousel-item ${props.isActive ? 'active' : ''}`}>
-          <div className="row  justify-content-center">
-              <div className="col-md-6 " >
+          <div className="row  justify-content-center flex-wrap">
+              <div className="col-md-6 " style={{marginTop: '24px' , padding: '0px 12px' , wordWrap: 'break-word', overflowWrap: 'break-word'}}>
                   <div className="testimonial-content">
-                      <p style={{ fontSize: '14px', lineHeight: '1.5' }}>
+                      <p style={{ fontSize: '14px', lineHeight: '1.5' }} >
                           <i className="bi bi-quote"></i>
                             <span>{props.empInfo}</span>
                           <i className="bi bi-quote "></i>
