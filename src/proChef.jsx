@@ -8,10 +8,10 @@ const proChef = (props) => {
                 <div className=" card-header member-img" style={{padding: '0px'}}>
                     <img src={props.img} alt={props.chefName }className="img-fluid rounded"/>
                     <div className="social "  >
-                        <a ><i className="bi bi-twitter-x "></i></a>
-                        <a ><i className="bi bi-facebook "></i></a>
-                        <a ><i className="bi bi-instagram "></i></a>
-                        <a ><i className="bi bi-linkedin "></i></a>
+                        <a href="https://twitter.com"><i className="bi bi-twitter-x "></i></a>
+                        <a href="https://www.facebook.com"><i className="bi bi-facebook "></i></a>
+                        <a href="https://www.instagram.com"><i className="bi bi-instagram "></i></a>
+                        <a href="https://www.linkedin.com"><i className="bi bi-linkedin "></i></a>
                     </div>
                 </div>
                 <div className=" card-body text-center member-info">

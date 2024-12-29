@@ -10,7 +10,7 @@ const Why = () => {
                        <div className="why-box">
                            <h2 >Why Choose Yummy</h2>
                            <p className='mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi labore ipsa doloremque exercitationem aperiam minus praesentium corporis sit. Voluptates ipsum doloribus, mollitia cupiditate, maxime corrupti eius accusantium hic sit fuga minus.</p>
-                           <div className="text-center"><a className="more-btn" style={{padding: '8px 40px 10px', backgroundColor:'rgb(234, 46, 46)', textDecoration: 'none', color: '#ffffff'}}><span>learn More</span><i className="bi bi-chevron-right ms-2"></i></a></div>
+                           <div className="text-center"><a hraf="https://ww.youtube.com" className="more-btn" style={{padding: '8px 40px 10px', backgroundColor:'rgb(234, 46, 46)', textDecoration: 'none', color: '#ffffff'}}><span>learn More</span><i className="bi bi-chevron-right ms-2"></i></a></div>
                        </div>
                    </div>
    
