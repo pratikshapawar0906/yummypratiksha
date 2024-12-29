@@ -8,7 +8,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
 
     const dataHandler = (e) => {
-        const { name, value, files } = e.target;
+        const { name, value } = e.target;
 
           setdata({ ...data, [name]: value });
 

@@ -60,7 +60,7 @@ const BookATable = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 reservation-img aos-init aos-animated"data-aos="fade-up" data-aos-delay="100" >
-                            <img src="images/book-a-table.jpeg" className="img-fluid"/>
+                            <img src="images/book-a-table.jpeg"  alt="Table Images" className="img-fluid"/>
                         </div>
                         <div className="col-lg-8 light-background d-flex align-items-center aos-init aos-animated" data-aos="fade-up" data-aos-delay="200" >
                             <form onSubmit={(e)=>saveForm(e)}>

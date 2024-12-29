@@ -46,7 +46,7 @@ const About = () => {
                             <div className=' position-relative mt-4' >
                                 <img src="images/about-2.jpg"  alt="Additional about us info" className="img-fluid "/>
                                 <div className=" youtube ">
-                                  <a href="https://www.youtube.com/watch?v=V7f98aduVJ8" target='_blank' className="pulsating-play-btn play-btn"><i className="bi bi-youtube "></i></a>
+                                  <a href="https://www.youtube.com/watch?v=V7f98aduVJ8" target='_blank'rel="noreferrer" className="pulsating-play-btn play-btn"><i className="bi bi-youtube "></i></a>
                                 </div>
                             </div>
                        </div>

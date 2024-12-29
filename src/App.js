@@ -87,7 +87,7 @@ const App = () => {
        {/* Footer section complete */}
         
 
-       <a href="#" className="scroll-top d-flex justify-content-center align-items-center active">
+       <a href="/" className="scroll-top d-flex justify-content-center align-items-center active">
                 <i className="bi bi-arrow-up-short"></i>
        </a>
     </>
