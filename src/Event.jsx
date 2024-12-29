@@ -11,7 +11,7 @@ import 'swiper/css/autoplay';
 
 import { Autoplay } from 'swiper/modules';
 
-export default () => {
+const Event= () => {
     const data=[
         {
             id:1,
@@ -97,3 +97,4 @@ export default () => {
     </Swiper>
   );
 };
+export default Event

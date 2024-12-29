@@ -33,10 +33,10 @@ const Footer = () => {
                         <div className="col-lg-3 " style={{fontSize: '14px', marginTop: '16px', padding: '0px 12px'}}>
                              <h4 style={{fontSize:'16px', marginBottom: '15px', fontWeight: '700'}}>follow us</h4>
                             <div className="social-link d-flex ">
-                              <a href="#" className="twitter"><i className="bi bi-twitter-x"></i></a>
-                              <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                              <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                              <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                              <a href="https://twitter.com" className="twitter"><i className="bi bi-twitter-x"></i></a>
+                              <a href="https://facebook.com" className="facebook"><i className="bi bi-facebook"></i></a>
+                              <a href="https://instagram.com" className="instagram"><i className="bi bi-instagram"></i></a>
+                              <a href="https://linkdIn.com" className="linkedin"><i className="bi bi-linkedin"></i></a>
                             </div>      
                                
                         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                    <p style={{margin: '0%', fontSize: '14px'}}><i className="bi bi-copyright"></i>Copywrite<strong>Yummy</strong>All Rights Reserved</p>
                    <div className="credits">
                     Designed by
-                    <a href="https://boostrapmade.com/" style={{color: '#CE1212', textDecoration: 'none'}}>Boostrapmade</a>
+                    <a href="https://boostrap.com/" style={{color: '#CE1212', textDecoration: 'none'}}>Boostrapmade</a>
                    </div>
                 </div>
       </footer>

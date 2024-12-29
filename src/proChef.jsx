@@ -6,12 +6,12 @@ const proChef = (props) => {
       
             <div className=" card team-member">
                 <div className=" card-header member-img" style={{padding: '0px'}}>
-                    <img src={props.img} className="img-fluid rounded"/>
+                    <img src={props.img} alt={props.chefName }className="img-fluid rounded"/>
                     <div className="social "  >
-                        <a href=""><i className="bi bi-twitter-x "></i></a>
-                        <a href=""><i className="bi bi-facebook "></i></a>
-                        <a href=""><i className="bi bi-instagram "></i></a>
-                        <a href=""><i className="bi bi-linkedin "></i></a>
+                        <a ><i className="bi bi-twitter-x "></i></a>
+                        <a ><i className="bi bi-facebook "></i></a>
+                        <a ><i className="bi bi-instagram "></i></a>
+                        <a ><i className="bi bi-linkedin "></i></a>
                     </div>
                 </div>
                 <div className=" card-body text-center member-info">

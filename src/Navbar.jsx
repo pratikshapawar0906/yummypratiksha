@@ -25,14 +25,14 @@ const Navbar = () => {
                             <li className="nav-item mx-3"><ScrollLink to='chefs' smooth={true} duration={500} className="nav-link chef" >Chefs</ScrollLink></li>
                             <li className="nav-item mx-3"><ScrollLink to='gallary' smooth={true} duration={500} className="nav-link gallary">Gallary</ScrollLink></li>
        
-                            <li className="nav-item mx-2 dropdown"><a href="#"className='nav-link dropdown-toggle ' data-bs-toggle="dropdown"
-                               role="button" id="dropdownMenuButton" aria-expanded="false">Dropdown</a>
+                            <li className="nav-item mx-2 dropdown"><ScrollLink to="#"className='nav-link dropdown-toggle ' data-bs-toggle="dropdown"
+                               role="button" id="dropdownMenuButton" aria-expanded="false">Dropdown</ScrollLink>
        
                                  <ul className="dropdown-menu"aria-labelledby="dropdownMenuButton" >
                                     <li><ScrollLink to="#" className=" nav-link dropdown-item">Dropdown 1</ScrollLink></li>
       
-                                    <li className="dropdown-item dropdown"><a href="#" data-bs-toggle="dropdown"
-                                          className=" nav-link dropdown-toggle"  aria-expanded="false">Deep Dropdown 1</a>
+                                    <li className="dropdown-item dropdown"><ScrollLink to="#" data-bs-toggle="dropdown"
+                                          className=" nav-link dropdown-toggle"  aria-expanded="false">Deep Dropdown 1</ScrollLink>
       
                                             <ul className="dropdown-menu  d-menu" >
                                                <li className="dropdown-item dropdown-toggle "><ScrollLink to="#" className="nav-link"> Deep Dropdown

@@ -23,7 +23,7 @@ const Home = () => {
                         </ScrollLink>
         
                         <button className="btn btn-light px-4 fw-bold watch"  style={{borderRadius: '20px'}}>
-                          <a href="https://www.youtube.com/watch?v=V7f98aduVJ8" className="pulsating-play-btn m-auto d-inline-flex align-items-center" target="_blank">
+                          <a href="https://www.youtube.com" className="pulsating-play-btn m-auto d-inline-flex align-items-center" target="_blank"  rel="noreferrer noopener">
                              <i className="bi bi-youtube  me-2 " style={{color: '#CE1212 !important'}}></i>Watch
                             Video</a></button>
                     </div>
