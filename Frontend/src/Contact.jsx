@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import Axios from 'axios'
+import { handleError, handleSuccess } from "./util";
+import { ToastContainer } from "react-toastify";
+
+
 const Contact = () => {
    const [data, setdata] = useState({username: '',useremail: '',subject:'',message:''});
 
    // *********************************************
 
-  const [errors, setErrors] = useState({});
 
     const dataHandler = (e) => {
         const { name, value } = e.target;
@@ -15,30 +17,33 @@ const Contact = () => {
   };
 
 
-  //   ********************************************
-  const saveForm = async(e) => {
-    e.preventDefault();
-    if (validation()) {
-        alert('Form submitted successfully!');
-        console.log(data);
-        setdata({username: '',useremail: '',subject:'',message:''});
-        setErrors({});
-    }
-    await Axios.post('http://localhost:3000/contact',data)
-  };
+//  // *******************************************
+ const saveForm = async(e) => {
+   e.preventDefault();
+    
+   const { username, useremail, subject, message}= data
 
+      if(!username || !useremail || !subject || !message){
+           return handleError('Name , email, subject and message are required ')
+      }
+      try{
+         const url="http://localhost:7000/user/contact"
+         const response = await fetch(url,{
+           method:"POST",
+           headers: {
+             "Content-Type": "application/json"
+         },
+         body: JSON.stringify({  name: username, email: useremail, subject, message })
+         })
+         const result=await response.json()
+         const { success, message: serverMessage }=result
 
-  //*************************************************** 
-     
-  const validation = () => {
-    const newErrors = {};
-    if (data.username === '') newErrors.username = 'Please enter your  name';
-    if (data.useremail === '') newErrors.useremail = 'Please enter your email';
-    if (data.subject === '') newErrors.subject = 'subject';
-    if (data.message === '') newErrors.message = 'Please enter a message';
-
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+         if (success) {
+            handleSuccess(serverMessage);
+         }
+      }catch(error){
+       handleError(error)
+      }
 
   };
   return (
@@ -95,16 +100,14 @@ const Contact = () => {
                       </div>
                       <div className="row">
                          <div className="col-lg-12">
-                            <form onSubmit={(e)=>saveForm(e)} className="aos-init aos-animated my-3 p-3" data-aos="fade-up" data-aos-delay="600"  style={{ backgroundColor: '#ffffff'}}>
+                            <form onSubmit={saveForm} className="aos-init aos-animated my-3 p-3" data-aos="fade-up" data-aos-delay="600"  style={{ backgroundColor: '#ffffff'}}>
                                <div className="row">
                                   <div className="col-lg-6 my-3">
 
                                        <div className="form-group">
 
                                          <input type='text' id='username' name='username' placeholder=' Your name' value={data.username} onChange={(e)=>dataHandler(e)} className='form-control'/>
-                                         { 
-                                           errors.username && <p className="fw-bold text-danger">{errors.username}</p>
-                                          }
+                                         
                    
                                        </div>
                                     </div>
@@ -113,9 +116,7 @@ const Contact = () => {
                                        <div className="form-group">
 
                                          <input type='email' id='useremail' name='useremail' placeholder=' Your email' value={data.useremail} onChange={(e)=>dataHandler(e)} className='form-control'/>
-                                         { 
-                                           errors.useremail && <p className="fw-bold text-danger">{errors.useremail}</p>
-                                          }
+                                        
                                        </div>
                                     </div>
                                     <div className="col-lg-12 my-3">
@@ -123,9 +124,7 @@ const Contact = () => {
                                        <div className="form-group">
 
                                          <input type='text' id='subject' name='subject' placeholder=' Subject' value={data.subject} onChange={(e)=>dataHandler(e)} className='form-control'/>
-                                         { 
-                                           errors.subject && <p className="fw-bold text-danger">{errors.subject}</p>
-                                          }
+                                         
                                        </div>
                                     </div>
                                     <div className="col-lg-12 my-3">
@@ -134,9 +133,7 @@ const Contact = () => {
 
                                           
                                          <textarea type='message' id='message' name='message' placeholder='Message' rows='5' value={data.message} onChange={(e)=>dataHandler(e)} className='form-control'/>
-                                         { 
-                                           errors.message && <p className="fw-bold text-danger">{errors.message}</p>
-                                          }
+                                         
                                        </div>
                                     </div>
                                     <div className="text-center">
@@ -148,6 +145,7 @@ const Contact = () => {
                                  </div>
                                </div>
                             </form>
+                            <ToastContainer/>
                          </div>
                       </div>
                 </div>

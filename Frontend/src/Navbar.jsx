@@ -55,6 +55,7 @@ const Navbar = () => {
                                   </ul>
                               </li>
                               <li className="nav-item mx-3"><ScrollLink to="contact" smooth={true} duration={500} className="nav-link contact" >Contact</ScrollLink></li>
+                              {/* <li className="nav-item mx-3"><a href="/"  className="nav-link contact" ></a></li> */}
                           </ul>
                        </div> 
                 </div>
@@ -67,6 +68,7 @@ const Navbar = () => {
 
          </div>
       </nav>  
+
     </>
   )
 }

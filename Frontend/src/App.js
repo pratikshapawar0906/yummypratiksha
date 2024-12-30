@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { BrowserRouter as Router,Routes,Route,  } from 'react-router-dom'
 import Navbar from './Navbar'
 import Contact from './Contact'
 import Menu from './Menu'
@@ -16,14 +16,12 @@ import Why from './Why-us'
 import Testimonials from './Testimonials';
 import BookATable from './BookATable';
 import Footer from './Footer';
-
-
 const App = () => {
-
-    useEffect(() => {
-        AOS.init();
-        
-      }, []);
+ 
+  useEffect(() => {
+      AOS.init();
+      
+    }, []);
       
   return (
     <>
@@ -85,10 +83,11 @@ const App = () => {
        {/* Footer section */}
         <Footer/>
        {/* Footer section complete */}
-        
+      
+
 
        <a href="/" className="scroll-top d-flex justify-content-center align-items-center active">
-                <i className="bi bi-arrow-up-short"></i>
+            <i className="bi bi-arrow-up-short"></i>
        </a>
     </>
   )
