@@ -1,8 +1,8 @@
 const express =require('express')
-const connectDb = require('../Config/db');
+const connectDb = require('./config/db');
 const bodyParser=require('body-parser')
 const dotenv=require('dotenv')
-const AuthRouter=require('./routes/AuthRouter')
+const ContactRouter=require('./router/ContactRouter')
 const cors=require('cors')
 dotenv.config()
 
@@ -24,11 +24,10 @@ app.use(bodyParser.json())
 app.use(cors())
 
 // Serve static files from the 'public' folder
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
-app.use('/auth',AuthRouter)
 
-app.use('/user',AuthRouter)
+app.use('/user',ContactRouter)
 
 
 app.listen(PORT, () => {
