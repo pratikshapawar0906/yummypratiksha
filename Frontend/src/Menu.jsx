@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar1 from './Navbar1'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
-import Starter from './Starter'
+import Starter from "./Starter"
 import Breakfast from './Breakfast'
 import Lunch from './Lunch'
 import Dinner1 from './Dinner1'
