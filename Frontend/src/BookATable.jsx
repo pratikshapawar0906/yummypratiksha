@@ -28,7 +28,7 @@ const BookATable = () => {
              return handleError('Name , email, subject and message are required ')
         }
         try{
-           const url="http://localhost:7000/user/booktable"
+           const url="http://yummypratiksha.onrender.com/user/booktable"
            const response = await fetch(url,{
              method:"POST",
              headers: {

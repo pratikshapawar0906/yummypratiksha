@@ -27,7 +27,7 @@ const Contact = () => {
            return handleError('Name , email, subject and message are required ')
       }
       try{
-         const url="http://localhost:7000/user/contact"
+         const url="http://yummypratiksha.onrender.com/user/contact"
          const response = await fetch(url,{
            method:"POST",
            headers: {
