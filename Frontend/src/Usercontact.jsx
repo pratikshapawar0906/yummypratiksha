@@ -8,7 +8,7 @@ const Usercontact = () => {
   
   const loadData = async () => {
     try {
-      const result = await Axios.get('http://yummypratiksha.onrender.com/contact');
+      const result = await Axios.get('http://localhost:3000/contact');
       setData(result.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -25,7 +25,7 @@ const Usercontact = () => {
   const deleteContact = async (id) => {
     if (window.confirm('Are you sure you want to delete this contact?')) {
       try {
-        await Axios.delete(`http://yummypratiksha.onrender.com/contact/${id}`);
+        await Axios.delete(`http://localhost:3000/contact/${id}`);
 
         setData(data.filter((val) => val.id !== id)); 
       } catch (error) {

@@ -17,7 +17,7 @@ const Editcontact = () => {
 
   const fetchUser = async () => {
     try {
-      const result = await Axios.get(`http://yummypratiksha.onrender.com/contact/${id}`);
+      const result = await Axios.get(`http://localhost:3000/contact/${id}`);
       setUsername(result.data.username || '');
       setEmail(result.data.useremail  || '');
       setSubject(result.data.subject  || '');
@@ -38,7 +38,7 @@ const Editcontact = () => {
 
     e.preventDefault();
     try {
-      await Axios.put(`http://yummypratiksha.onrender.com/contact/${id}`, {
+      await Axios.put(`http://localhost:3000/contact/${id}`, {
         username,
         useremail,
         subject,

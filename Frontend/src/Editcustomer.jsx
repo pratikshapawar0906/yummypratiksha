@@ -46,7 +46,7 @@ const Editcustomer = () => {
     const FetchUser = async () => {
 
 
-        const result = await Axios.get(`http://yummypratiksha.onrender.com/customer/${id}`);
+        const result = await Axios.get(`http://localhost:3000/customer/${id}`);
 
         // console.log(result);
         console.log(result.data);
@@ -89,7 +89,7 @@ const Editcustomer = () => {
 
         
 
-        await Axios.put(`http://yummypratiksha.onrender.com/customer/${id}`,
+        await Axios.put(`http://localhost:3000/customer/${id}`,
             {
 
                 username: username,

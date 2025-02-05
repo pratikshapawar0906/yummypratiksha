@@ -7,7 +7,7 @@ const Usercustomer = () => {
 
     const LodData=async()=>{
         try{
-            const result=await Axios.get('http://yummypratiksha.onrender.com/customer')
+            const result=await Axios.get('http://localhost:3000/customer')
             console.log(result.data)
             setdata(result.data)
         }
@@ -27,7 +27,7 @@ const Usercustomer = () => {
 
         var result=data.filter((val)=>val.id!==id)
         setdata(result)
-        await Axios.delete(`http://yummypratiksha.onrender.com/customer/${id}`)
+        await Axios.delete(`http://localhost:3000/customer/${id}`)
     }
   return (
     <>
